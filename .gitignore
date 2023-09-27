@@ -1,0 +1,11 @@
+# Ignorar los directorios node_modules en el backend
+/backend/node_modules
+/backend/node_modules/
+./backend/node_modules
+./backend/node_modules/
+
+# Ignorar los directorios node_modules en el frontend
+/frontend/node_modules
+/frontend/node_modules/
+./frontend/node_modules
+./frontend/node_modules/
