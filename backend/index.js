@@ -86,8 +86,6 @@ const WooCommerce = new WooCommerceRestApi({
   });
 
 
-
-
 // Ruta para obtener detalles de un producto específico por su ID
 app.get('/wocomerce/products/:productId', (req, res) => {
     const productId = req.params.productId; // Obtén el ID del producto desde la URL
@@ -121,9 +119,6 @@ app.delete("/wocomerce/products/:productId",(req, res)=> {
 });
 
 
-
-
-// Ruta para actualizar stock
 // Ruta para actualizar un producto específico por su ID
 app.put('/wocomerce/products/:productId', (req, res) => {
     const productId = req.params.productId; // Obtén el ID del producto desde la URL

@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2'
-import UploadJSONComponent from '../components/Cargajson'
-import DescargarJson from '../components/DescargarJson'
+import UploadJSONComponent from '../../components/Cargajson'
+import DescargarJson from '../../components/DescargarJson'
+
+
+import { getProducts } from '../../services/api_wocomerce'
+
+
 
 const Home_Wm = ()=> {
  
@@ -13,15 +18,19 @@ const [data, setData] = useState([]);
 
 //peticion get para traer todos los datos y pintarlos 
 useEffect(()=>{
-  axios.get('http://localhost:8080/wocomerce/products')
+  getProducts()
+ 
   .then((res)=>{
-    setData(res.data)
+    setData(res)
   })
   .catch((error)=>{
     console.error('Error al obtener datos de productos:', error);
   })
 
 }, [])
+
+
+
 
  
 
@@ -99,7 +108,7 @@ const handleCancelClick = () => {
 
 return (
   <div className="App">
-    <h1>Aplicación Frontend</h1>
+    <h1>Data Wocomerce</h1>
     <table>
       <thead>
         <tr>
@@ -112,7 +121,7 @@ return (
         </tr>
       </thead>
       <tbody>
-        {data.map((item) => (
+      {data.map((item) => (
           <tr key={item.id}>
             <td>{item.id}</td>
             <td>
@@ -150,6 +159,7 @@ return (
             {/* Agrega aquí otras columnas si es necesario */}
           </tr>
         ))}
+        
       </tbody>
     </table>
     <section>

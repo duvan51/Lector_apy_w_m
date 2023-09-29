@@ -1,0 +1,28 @@
+[
+  {
+    "id": 6904,
+    "name": "CARGADOR DE BATERIA 12V - 15AMP PACO",
+    "manage_stock": true,
+    "stock_quantity": 5,
+    "regular_price": "470000",
+    "price": "470000",
+    "sku": "MBC1215",
+    "description": "",
+    "categories": [
+      {
+        "id": "125"
+      },
+      {
+        "id": "163"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Paco"
+        ]
+      }
+    ]
+  }
+]
