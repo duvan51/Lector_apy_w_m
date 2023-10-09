@@ -51,8 +51,9 @@ const Update_Wm = () => {
     return (
         <div>
             <>
-            
+                <h1>Data Wocomerce</h1>
             </>
+           
             {/* Agrega un área donde puedes cargar el archivo JSON */}
             <input
                 type="file"
@@ -72,7 +73,7 @@ const Update_Wm = () => {
                 
             <>
             <div className="tableErr">
-                <h1>Data Wocomerce</h1>
+                
                 <table>
                     <thead>
                         <tr>

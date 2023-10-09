@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": 135,
+    "id": 6891,
     "name": "ANTENA DIGITAL PLANA TDT INTERIOR",
     "manage_stock": true,
     "stock_quantity": 47,
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 6908,
     "name": "INVERSOR 400W 12V",
     "manage_stock": true,
     "stock_quantity": 38,
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 6896,
     "name": "INVERSOR 400W 12V STEREN",
     "manage_stock": true,
     "stock_quantity": 7,
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6895,
     "name": "PROTECTOR DE NEVERA DIGITAL 110V 10A 3T",
     "manage_stock": true,
     "stock_quantity": 44,
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 1156,
     "name": "PROTECTOR PARA TELEVISORES 110V 10A 50/60HZ",
     "manage_stock": true,
     "stock_quantity": 27,
@@ -156,7 +156,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6899,
     "name": "PROTECTOR PARA LAVADORAS 110V 10A 50/60HZ",
     "manage_stock": true,
     "stock_quantity": 22,
@@ -182,12 +182,12 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6901,
     "name": "BATERIA SECA 12VDC - 9AMP",
     "manage_stock": true,
-    "stock_quantity": 53,
-    "regular_price": "92000",
-    "price": "92000",
+    "stock_quantity": 24,
+    "regular_price": "99500",
+    "price": "99500",
     "sku": "SB129",
     "description": "Batería Sellada FuliBattery 12V-9AH Ref. FL1290GS\n\nBatería Fuli Battery Nicomar 12V 9ah.\nSERIE GS (Serie General).\ndiseñada con AGM (Absorbente Glass Mat).\nDimensiones 12v 9ah: 151 x 65 x 101 mm Peso: 2.7 Kg\nSistema de alarma y seguridad.\nSistema de televisión por cable.\nHerramientas eléctricas y equipos eléctricos.\nIluminación de emergencia.\nEquipos médicos.\nSistema de UPS.\nEquipos de comunicación.\nJuguetes.",
     "categories": [
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6883,
     "name": "BASE MICROFONO MESA NEGRO",
     "manage_stock": true,
     "stock_quantity": 11,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6886,
     "name": "ESPUMA PARA MICROFONO COLORES",
     "manage_stock": true,
     "stock_quantity": 55,
@@ -286,7 +286,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6900,
     "name": "MEGAFONO 6\" USB SD BATERIA RECARGABLE",
     "manage_stock": true,
     "stock_quantity": 2,
@@ -312,7 +312,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6889,
     "name": "MEGAFONO 50W CON USB BATERIA Y CABLES BATERIA ROXT",
     "manage_stock": true,
     "stock_quantity": 16,
@@ -338,7 +338,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6913,
     "name": "MEGAFONO 25W BATERIA RECARGABLE 8XD/USB",
     "manage_stock": true,
     "stock_quantity": 0,
@@ -364,7 +364,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 6909,
     "name": "MULTITOMA 6 PUESTOS TECHMAN",
     "manage_stock": true,
     "stock_quantity": 3,
@@ -1277,7 +1277,7 @@
     "id": "",
     "name": "ESTABILIZADOR 2000W MAGOM A 110V",
     "manage_stock": true,
-    "stock_quantity": 5,
+    "stock_quantity": 8,
     "regular_price": "260000",
     "price": "260000",
     "sku": "EV2000",
@@ -1347,6 +1347,58 @@
         "name": "Marca",
         "options": [
           "Paco"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "BATERIA SECA 12VDC - 7AMP",
+    "manage_stock": true,
+    "stock_quantity": 0,
+    "regular_price": "60000",
+    "price": "60000",
+    "sku": "SB127",
+    "description": "",
+    "categories": [
+      {
+        "id": ""
+      },
+      {
+        "id": ""
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "cargador de baterias de acido 12v -20a",
+    "manage_stock": true,
+    "stock_quantity": 4,
+    "regular_price": "325000",
+    "price": "325000",
+    "sku": "car1220c",
+    "description": "",
+    "categories": [
+      {
+        "id": "125"
+      },
+      {
+        "id": "163"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Generic"
         ]
       }
     ]

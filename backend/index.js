@@ -374,12 +374,14 @@ app.get('/wocomerce/atributos', (req, res) => {
           currentPage++;
           fetchAtributos();
         } else {
-          // Todas las categorías han sido obtenidas
+          // Todas los atributos han sido obtenidas
+         
           const simplifiedAtributos = allAtributos.map((atributo) => ({
             id: atributo.id,
             name: atributo.name,
             order_bry: atributo.order_bry,
             has_archives: atributo.has_archives
+            
           }));
           res.json(simplifiedAtributos);
         }
@@ -390,9 +392,15 @@ app.get('/wocomerce/atributos', (req, res) => {
       });
   };
 
-  // Iniciar la obtención de categorías
+  // Iniciar la obtención de atributos
   fetchAtributos();
 });
+
+
+
+
+
+
 
 
 
@@ -433,29 +441,62 @@ app.get ('/mercadolibre/auth', async (req, res)=>{
 
 
 
-// api de mercadolibre----------------
-   app.use(express.json());
+  // api de mercadolibre----------------
+    app.use(express.json());
 
-   const accessToken = "APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935";
-   
-   app.get('/mercadolibre/products', (req, res) => {
-     const nickname = "ELECTRICOS AVAL";
-     const apiUrl = `https://api.mercadolibre.com/sites/MCO/search?nickname=${nickname}`;
-   
-     const headers = {
-       Authorization: `Bearer ${accessToken}`
-     };
-   
-     axios.get(apiUrl, { headers })
-       .then(response => {
-         res.status(200).json(response.data.results);
-       })
-       .catch(error => {
-         res.status(500).json({ error: 'Error al hacer la solicitud a MercadoLibre' });
-       });
-   });
+    const accessToken = "APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935";
+    
+    app.get('/mercadolibre/products', (req, res) => {
+      const nickname = "ELECTRICOS AVAL";
+      const apiUrl = `https://api.mercadolibre.com/sites/MCO/search?nickname=${nickname}`;
+    
+      const headers = {
+        Authorization: `Bearer ${accessToken}`
+      };
+    
+      axios.get(apiUrl, { headers })
+        .then(response => {
+          res.status(200).json(response.data.results);
+        })
+        .catch(error => {
+          res.status(500).json({ error: 'Error al hacer la solicitud a MercadoLibre' });
+        });
+    });
 
-//end peticion mercadolibre
+  //end peticion mercadolibre
+
+  //start api de mercadolibre----------------
+
+    app.put('/mercadolibre/products/:itemId', (req, res) => {
+      const accessToken = "APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935"; // Obtiene el token de acceso del encabezado
+      const itemId = req.params.itemId; // Obtiene el ID del artículo de los parámetros
+
+      // Asegúrate de que el token de acceso y el ID del artículo sean válidos antes de realizar la solicitud a MercadoLibre
+      
+      const apiUrl = `https://api.mercadolibre.com/items/${itemId}`;
+
+      const headers = {
+        Authorization: `Bearer ${accessToken}`,
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      };
+
+      const newData = req.body; // Los datos a actualizar se obtienen del cuerpo de la solicitud
+
+      axios.put(apiUrl, newData, { headers })
+        .then(response => {
+          res.status(200).json(response.data);
+        })
+        .catch(error => {
+          console.error('Error al hacer la solicitud a MercadoLibre:', error);
+          res.status(500).json({ error: 'Error al hacer la solicitud a MercadoLibre' });
+        });
+    });
+  //end api de mercadolibre----------------
+
+
+
+
 
 
 

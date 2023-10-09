@@ -1,5 +1,5 @@
 import React from 'react'
-import { MgetProducts } from '../../services/api_mercadolibre';
+import { MgetProducts, updateProductM } from '../../services/api_mercadolibre';
 import { useState, useEffect } from 'react';
 
 import UploadJSONComponent from '../../components/Cargajson'

@@ -15,3 +15,15 @@ export const MgetProducts = async ()=>{
     }
    
 }
+
+
+
+export const updateProductM = async (productId, productData) => {
+    try {
+        const req = await axios.put(`${URL}/mercadolibre/products/${productId}`, productData);
+        return req.data;
+    } catch (err) {
+        console.error("Error al actualizar el producto: ", err);
+        throw err;
+    }
+};

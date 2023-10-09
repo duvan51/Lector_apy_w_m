@@ -13,7 +13,8 @@ const DescargarJson = () => {
                 id: item.id,
                 name: item.name,
                 sku: item.sku,
-                price: item.price
+                price: item.price,
+                permalink: item.permalink
               }));
               
               

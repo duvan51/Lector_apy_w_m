@@ -108,6 +108,9 @@ const handleCancelClick = () => {
 
 return (
   <div className="App">
+    <div>
+      <a href='http://localhost:3000/wocomerce/update'>update</a>
+    </div>
     <h1>Data Wocomerce</h1>
     <table>
       <thead>

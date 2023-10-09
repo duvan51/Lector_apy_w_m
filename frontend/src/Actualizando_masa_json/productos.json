@@ -26,7 +26,7 @@
     ]
   },
   {
-    "id": 135,
+    "id": 6891,
     "name": "ANTENA DIGITAL PLANA TDT INTERIOR",
     "manage_stock": true,
     "stock_quantity": 47,
@@ -52,7 +52,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 6908,
     "name": "INVERSOR 400W 12V",
     "manage_stock": true,
     "stock_quantity": 38,
@@ -78,7 +78,7 @@
     ]
   },
   {
-    "id": 129,
+    "id": 6896,
     "name": "INVERSOR 400W 12V STEREN",
     "manage_stock": true,
     "stock_quantity": 7,
@@ -104,7 +104,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6895,
     "name": "PROTECTOR DE NEVERA DIGITAL 110V 10A 3T",
     "manage_stock": true,
     "stock_quantity": 44,
@@ -130,7 +130,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 1156,
     "name": "PROTECTOR PARA TELEVISORES 110V 10A 50/60HZ",
     "manage_stock": true,
     "stock_quantity": 27,
@@ -156,7 +156,7 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6899,
     "name": "PROTECTOR PARA LAVADORAS 110V 10A 50/60HZ",
     "manage_stock": true,
     "stock_quantity": 22,
@@ -182,12 +182,12 @@
     ]
   },
   {
-    "id": 125,
+    "id": 6901,
     "name": "BATERIA SECA 12VDC - 9AMP",
     "manage_stock": true,
-    "stock_quantity": 53,
-    "regular_price": "92000",
-    "price": "92000",
+    "stock_quantity": 24,
+    "regular_price": "99500",
+    "price": "99500",
     "sku": "SB129",
     "description": "Batería Sellada FuliBattery 12V-9AH Ref. FL1290GS\n\nBatería Fuli Battery Nicomar 12V 9ah.\nSERIE GS (Serie General).\ndiseñada con AGM (Absorbente Glass Mat).\nDimensiones 12v 9ah: 151 x 65 x 101 mm Peso: 2.7 Kg\nSistema de alarma y seguridad.\nSistema de televisión por cable.\nHerramientas eléctricas y equipos eléctricos.\nIluminación de emergencia.\nEquipos médicos.\nSistema de UPS.\nEquipos de comunicación.\nJuguetes.",
     "categories": [
@@ -208,7 +208,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6883,
     "name": "BASE MICROFONO MESA NEGRO",
     "manage_stock": true,
     "stock_quantity": 11,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6886,
     "name": "ESPUMA PARA MICROFONO COLORES",
     "manage_stock": true,
     "stock_quantity": 55,
@@ -286,7 +286,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6900,
     "name": "MEGAFONO 6\" USB SD BATERIA RECARGABLE",
     "manage_stock": true,
     "stock_quantity": 2,
@@ -312,7 +312,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6889,
     "name": "MEGAFONO 50W CON USB BATERIA Y CABLES BATERIA ROXT",
     "manage_stock": true,
     "stock_quantity": 16,
@@ -338,7 +338,7 @@
     ]
   },
   {
-    "id": 137,
+    "id": 6913,
     "name": "MEGAFONO 25W BATERIA RECARGABLE 8XD/USB",
     "manage_stock": true,
     "stock_quantity": 0,
@@ -364,7 +364,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 6909,
     "name": "MULTITOMA 6 PUESTOS TECHMAN",
     "manage_stock": true,
     "stock_quantity": 3,
@@ -709,7 +709,7 @@
     "regular_price": "155000",
     "price": "155000",
     "sku": "ART722",
-    "description": "",
+    "description": "Descripción:\n\nKit dual de micrófonos inalámbricos de mano, con sistema antirruido. Libera tu presentación de los cables, ya que puedes ir a más y mejores lugares. Cuando puedes utilizar la tecnología inalámbrica sin preocupaciones, puedes dar shows sin límites. Ideal para iglesias, salas de ensayos y reuniones familiares.\n\nCaracterísticas:\n\n✅ Planta receptora con control individual de volumen.\n✅ Distancia de cobertura 30mts lineales max.\n✅ Frecuencia de respuesta VHF.\nUna sola salida de microfono en la parte posterior, se conectan a una sola entrada de microfono del amplificador\n✅ Volumen independiente para cada microfono\n✅ Microfonos marcados en codigo de colores (naranja y verde)\n✅ 40 metros de alcance.\nLos microfonos usan baterias 9V (incluye 2 para uso inicial)\n✅ Adaptador de corriente switchado (se puede conectar a 110v )\n✅ 2 canales para emplear ambos captores simultaneamente.\n✅ Cable de Plug 1/4'', Adaptador y baterías para micrófono incluidas.",
     "categories": [
       {
         "id": "137"
@@ -832,7 +832,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7240,
     "name": "REGULADOR SOLAR 10 AMPERIOS ECO",
     "manage_stock": true,
     "stock_quantity": 44,
@@ -858,7 +858,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7239,
     "name": "REGULADOR SOLAR 20 AMPERIOS ECO",
     "manage_stock": true,
     "stock_quantity": 29,
@@ -884,7 +884,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7241,
     "name": "REGULADOR SOLAR 60 AMPERIOS ECO",
     "manage_stock": true,
     "stock_quantity": 20,
@@ -1196,7 +1196,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7238,
     "name": "BOMBILLO LED 7W EMERGENCIA SYLVANIA",
     "manage_stock": true,
     "stock_quantity": 14,
@@ -1222,7 +1222,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7237,
     "name": "BOMBILLO LED 10W DIMERIZABLE SYLVANIA",
     "manage_stock": true,
     "stock_quantity": 33,
@@ -1274,10 +1274,10 @@
     ]
   },
   {
-    "id": "",
+    "id": 7234,
     "name": "ESTABILIZADOR 2000W MAGOM A 110V",
     "manage_stock": true,
-    "stock_quantity": 5,
+    "stock_quantity": 8,
     "regular_price": "260000",
     "price": "260000",
     "sku": "EV2000",
@@ -1300,7 +1300,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7236,
     "name": "MULTITOMA 7 SALIDAS CON SUPRESOR PICOS MAGOM",
     "manage_stock": true,
     "stock_quantity": 0,
@@ -1326,7 +1326,7 @@
     ]
   },
   {
-    "id": "",
+    "id": 7235,
     "name": "CARGADOR DE BATERIA 12V -10AMP PACO",
     "manage_stock": true,
     "stock_quantity": 6,
@@ -1347,6 +1347,552 @@
         "name": "Marca",
         "options": [
           "Paco"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "BATERIA SECA 12VDC - 7AMP",
+    "manage_stock": true,
+    "stock_quantity": 0,
+    "regular_price": "60000",
+    "price": "60000",
+    "sku": "SB127",
+    "description": "",
+    "categories": [
+      {
+        "id": ""
+      },
+      {
+        "id": ""
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7242,
+    "name": "cargador de baterias de acido 12v -20a",
+    "manage_stock": true,
+    "stock_quantity": 4,
+    "regular_price": "325000",
+    "price": "325000",
+    "sku": "car1220c",
+    "description": "",
+    "categories": [
+      {
+        "id": "125"
+      },
+      {
+        "id": "163"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Generic"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7435,
+    "name": "BATERIA SECA 6VDC - 7AMP",
+    "manage_stock": true,
+    "stock_quantity": 23,
+    "regular_price": "40000",
+    "price": "40000",
+    "sku": "SB67",
+    "description": "",
+    "categories": [
+      {
+        "id": "125"
+      },
+      {
+        "id": "126"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Fullybattery"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7440,
+    "name": "CAMARA FIJA WIFI 1080P",
+    "manage_stock": true,
+    "stock_quantity": 2,
+    "regular_price": "122000",
+    "price": "122000",
+    "sku": "CCTV-204",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "CAMARA WIFI  CON MONITOREO POR INTERNET",
+    "manage_stock": true,
+    "stock_quantity": 9,
+    "regular_price": "155000",
+    "price": "155000",
+    "sku": "CCTV-218",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7429,
+    "name": "CAMARA WIFI 1080 C/MOV Y SEGUIDOR DE MOV",
+    "manage_stock": true,
+    "stock_quantity": 3,
+    "regular_price": "230000",
+    "price": "230000",
+    "sku": "CCTV-219",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7434,
+    "name": "CAMARA WIFI /ETHERNET PARA EXTERIORES",
+    "manage_stock": true,
+    "stock_quantity": 1,
+    "regular_price": "190000",
+    "price": "190000",
+    "sku": "CCTV-228",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7428,
+    "name": "CAMARA WIFI  CON BATERIA RECARGABLE",
+    "manage_stock": true,
+    "stock_quantity": 1,
+    "regular_price": "365000",
+    "price": "365000",
+    "sku": "CCTV-240",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7438,
+    "name": "CAMARA WIFI FIJA CON REFLECTOR",
+    "manage_stock": true,
+    "stock_quantity": 4,
+    "regular_price": "245000",
+    "price": "245000",
+    "sku": "CCTV-550",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7437,
+    "name": "Cámara de seguridad Wi-Fi / Ethernet 3 Mpx robotizada con seguidor de movimiento para exterior",
+    "manage_stock": true,
+    "stock_quantity": 2,
+    "regular_price": "312000",
+    "price": "312000",
+    "sku": "cctv235",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "167"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7439,
+    "name": "INTERUPTOR SECILLO INTELIGENTE WIFI ESTEREN",
+    "manage_stock": true,
+    "stock_quantity": 9,
+    "regular_price": "105000",
+    "price": "105000",
+    "sku": "SHOME-115",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "160"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7430,
+    "name": "TRIPLE APAGADOR WI-FI DE PARED",
+    "manage_stock": true,
+    "stock_quantity": 6,
+    "regular_price": "125000",
+    "price": "125000",
+    "sku": "SHOME-117",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "160"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7433,
+    "name": "TOMA INTELIGENTE WIFI DOBLE+USB STEREN",
+    "manage_stock": true,
+    "stock_quantity": 3,
+    "regular_price": "122000",
+    "price": "122000",
+    "sku": "SHOME-118",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "168"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "CONTACTO WIFI CON WATTIMETRO",
+    "manage_stock": true,
+    "stock_quantity": 0,
+    "regular_price": "66000",
+    "price": "66000",
+    "sku": "SHOME-135",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": ""
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "MODULO INTERRUPTOR DE ENCENDIDO WIFI",
+    "manage_stock": true,
+    "stock_quantity": 0,
+    "regular_price": "35000",
+    "price": "35000",
+    "sku": "SHOME-140",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": ""
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7432,
+    "name": "APAGADOR TOUCH WIFI DOBLE",
+    "manage_stock": true,
+    "stock_quantity": 3,
+    "regular_price": "92000",
+    "price": "92000",
+    "sku": "SHOME-110",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "160"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7431,
+    "name": "DOBLE APAGADOR WIFI",
+    "manage_stock": true,
+    "stock_quantity": 9,
+    "regular_price": "112000",
+    "price": "112000",
+    "sku": "SHOME-116",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "160"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "",
+    "name": "OPERADOR WIFI PARA VALVULAS DE PASO",
+    "manage_stock": true,
+    "stock_quantity": 4,
+    "regular_price": "272000",
+    "price": "272000",
+    "sku": "SHOME-150",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": ""
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7442,
+    "name": "FOCO GLOBO LED 15W WIFI RGB",
+    "manage_stock": true,
+    "stock_quantity": 2,
+    "regular_price": "69000",
+    "price": "69000",
+    "sku": "SHOME-122",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "159"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7441,
+    "name": "3 FOCO LED WI-FI RGB+W MULTICOLOR DE 10W",
+    "manage_stock": true,
+    "stock_quantity": 8,
+    "regular_price": "117000",
+    "price": "117000",
+    "sku": "SHOME-120/3",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "159"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7436,
+    "name": "FOCO LED RGB CONTROLADO POR WI-FI 10W",
+    "manage_stock": true,
+    "stock_quantity": 2,
+    "regular_price": "45000",
+    "price": "45000",
+    "sku": "SHOME-120",
+    "description": "",
+    "categories": [
+      {
+        "id": "139"
+      },
+      {
+        "id": "159"
+      }
+    ],
+    "attributes": [
+      {
+        "name": "Marca",
+        "options": [
+          "Steren"
         ]
       }
     ]
