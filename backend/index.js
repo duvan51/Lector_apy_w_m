@@ -65,16 +65,18 @@ const WooCommerce = new WooCommerceRestApi({
           name: product.name,
           sku: product.sku,
           price: product.price,
-          price_regular: product.regular_price,
+          regular_price: product.regular_price,
           sale_price: product.sale_price,
           description: product.description,
           permalink: product.permalink,
           attributes: product.attributes,
-          categories:product.categories
+          categories:product.categories,
+          stock_quantity:product.stock_quantity
         }));
   
         // Envía la respuesta JSON al cliente
         res.json(simplifiedProducts);
+       
       } catch (error) {
         // Maneja los errores aquí
         console.error('Error al obtener productos:', error);
@@ -444,7 +446,7 @@ app.get ('/mercadolibre/auth', async (req, res)=>{
   // api de mercadolibre----------------
     app.use(express.json());
 
-    const accessToken = "APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935";
+    const accessToken = "TG-652477e5a311d50001188ec6-266179935";
     
     app.get('/mercadolibre/products', (req, res) => {
       const nickname = "ELECTRICOS AVAL";
@@ -457,6 +459,7 @@ app.get ('/mercadolibre/auth', async (req, res)=>{
       axios.get(apiUrl, { headers })
         .then(response => {
           res.status(200).json(response.data.results);
+          
         })
         .catch(error => {
           res.status(500).json({ error: 'Error al hacer la solicitud a MercadoLibre' });
@@ -468,7 +471,7 @@ app.get ('/mercadolibre/auth', async (req, res)=>{
   //start api de mercadolibre----------------
 
     app.put('/mercadolibre/products/:itemId', (req, res) => {
-      const accessToken = "APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935"; // Obtiene el token de acceso del encabezado
+      const accessToken = "TG-652477e5a311d50001188ec6-266179935"; // Obtiene el token de acceso del encabezado
       const itemId = req.params.itemId; // Obtiene el ID del artículo de los parámetros
 
       // Asegúrate de que el token de acceso y el ID del artículo sean válidos antes de realizar la solicitud a MercadoLibre
@@ -494,8 +497,22 @@ app.get ('/mercadolibre/auth', async (req, res)=>{
     });
   //end api de mercadolibre----------------
 
+//start para borrar mercadolibre por ID
+    app.delete("/mercadolibre/products/:productId",(req, res)=> {
+      const productId = req.params.productId;
 
+      WooCommerce.delete(`products/${productId}`,{force: true})
+      .then((response) => {
+        console.log(response.data.id);
+        res.status(204).send();
+      })
+      .catch((error) => {
+        console.log(error.response.data);
+        res.status(500).json({err: 'error al eliminal el producto'})
+      });
 
+    });
+//end para borrar mercadolibre por ID
 
 
 
@@ -525,6 +542,8 @@ app.get('/mercadolibre/AllProducts', async (req, res) => {
   }
 });
 
+
+/*
 // Función para actualizar los precios de los productos coincidentes
 async function actualizarPrecios(productosParaActualizar) {
   const ACCESS_TOKEN = 'APP_USR-8470447482001211-091816-0e41988707b4db550fedda8a366d62dc-266179935'; // Reemplaza con tu token de acceso
@@ -565,7 +584,7 @@ async function actualizarPrecios(productosParaActualizar) {
   return updatedItems;
 }
 
-
+*/
 
 
 

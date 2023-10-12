@@ -1,0 +1,11 @@
+@apiProducts = http://localhost:8080/wocomerce/products
+
+
+###  act cctv2-18
+
+PUT {{{{apiProducts}}}}/7452
+Content-Type: application/json
+
+{
+    "price": 160000
+}

@@ -1,0 +1,31 @@
+@apiProducts = http://localhost:8080/mercadolibre/products
+
+
+
+###
+POST https://api.mercadolibre.com/oauth/token
+accept: application/json
+content-type: application/x-www-form-urlencoded
+
+grant_type=authorization_code
+client_id=8470447482001211
+client_secret=N86WMw0m3IzjosM3l0fouGwRudwb5UJZ
+code=TG-652477e5a311d50001188ec6-266179935
+redirect_uri=https://www.appsheet.com/
+code_verifier=TU_VALOR_DE_CODE_VERIFIER
+
+
+###->146000 --available_quantity
+
+PUT {{apiProducts}}/MCO847158129
+Content-Type: application/json
+
+{
+    "price": 146000,
+    "available_quantity": 6
+}
+
+
+### GET products
+
+GET {{apiProducts}}/MCO847158129

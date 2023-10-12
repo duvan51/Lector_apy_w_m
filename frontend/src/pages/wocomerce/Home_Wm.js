@@ -3,6 +3,8 @@ import axios from 'axios';
 import Swal from 'sweetalert2'
 import UploadJSONComponent from '../../components/Cargajson'
 import DescargarJson from '../../components/DescargarJson'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt, faTrash, faPenToSquare, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 import { getProducts } from '../../services/api_wocomerce'
@@ -12,16 +14,23 @@ import { getProducts } from '../../services/api_wocomerce'
 const Home_Wm = ()=> {
  
 const [data, setData] = useState([]);
+const [products, setProducts] = useState([]);
 
   const [editingProductId, setEditingProductId] = useState(null);
   const [editedProduct, setEditedProduct] = useState({});
+  const [rowCounter, setRowCounter] = useState(1); // Inicializa el contador en 1
+
+   /* para el buscador */
+ const [busqueda, setBusqueda] =useState("")
+
 
 //peticion get para traer todos los datos y pintarlos 
 useEffect(()=>{
   getProducts()
  
   .then((res)=>{
-    setData(res)
+    setProducts(res);
+    setData(res);
   })
   .catch((error)=>{
     console.error('Error al obtener datos de productos:', error);
@@ -84,8 +93,13 @@ const handleSaveClick = () => {
     .then((res) => {
       if (res.status === 200) {
         // Actualización exitosa
-        setEditingProductId(null); // Sale del modo de edición
+        const updatedData = data.map((product) =>
+          product.id === editingProductId ? { ...product, ...editedProduct } : product
+        );
+        setData(updatedData);
         
+       setEditingProductId(null); // Sale del modo de edición
+  
         Swal.fire({
           position: 'top-end',
           icon: 'success',
@@ -106,8 +120,50 @@ const handleCancelClick = () => {
   setEditingProductId(null); // Sale del modo de edición
 };
 
+
+//esto es pára la busqueda y filtrado
+
+const handleChange=e=>{
+  setBusqueda(e.target.value);
+  console.log(e.target.value);
+  filtrar(e.target.value)
+}
+
+const filtrar = (terminoBusqueda) => {
+  if (terminoBusqueda === "") {
+    // Si el término de búsqueda está vacío, muestra todos los productos
+    setData(products);
+  } else {
+    // Filtra los productos según el término de búsqueda
+    const resultadosBusqueda = products.filter((elemento) => {
+      return (
+        elemento.id.toString().toLowerCase().includes(terminoBusqueda.toLowerCase()) ||
+        elemento.sku.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())
+        // Agrega aquí más lógica de búsqueda si es necesario
+      );
+    });
+    setData(resultadosBusqueda);
+  }
+};
+
+
+
+
+
 return (
   <div className="App">
+    <div className='containerInpunt'>
+      <input 
+      className='form-control inputBuscar'
+      value={busqueda}
+      placeholder='busqueda de productos'
+      onChange={handleChange}
+      />
+      <button className='btn btn-success'>
+        <FontAwesomeIcon icon={faSearch} />
+      </button>
+    </div>
+    
     <div>
       <a href='http://localhost:3000/wocomerce/update'>update</a>
     </div>
@@ -120,6 +176,8 @@ return (
           <th>SKU</th>
           <th>Price</th>
           <th>Categorias</th>
+          <th>Cantidad</th>
+          <th>Acciones</th>
           {/* Agrega aquí otros encabezados de columna si es necesario */}
         </tr>
       </thead>
@@ -137,6 +195,24 @@ return (
                     value={editedProduct.name || ''}
                     onChange={handleInputChange}
                   />
+                   <input
+                    type="text"
+                    name="sku"
+                    value={editedProduct.sku || ''}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="number"
+                    name="regular_price"
+                    value={editedProduct.regular_price || ''}
+                    onChange={handleInputChange}
+                  />
+                  <input
+                    type="number"
+                    name="stock_quantity"
+                    value={editedProduct.stock_quantity || ''}
+                    onChange={handleInputChange}
+                  />
                   {/* Agrega más campos según sea necesario */}
                   <button type="button" onClick={handleSaveClick}>
                     Guardar
@@ -151,12 +227,13 @@ return (
               )}
             </td>
             <td>{item.sku}</td>
-            <td>{item.price}</td>
+            <td>{item.regular_price}</td>
             <td>{item.categories[0].name}</td>
+            <td>{item.stock_quantity}</td>
             <td>
-              <button onClick={() => handleDeleteClick(item.id)}>Eliminar</button>
+              <button onClick={() => handleDeleteClick(item.id)}><FontAwesomeIcon icon={faTrash} /></button>
               {editingProductId !== item.id && (
-                <button onClick={() => handleUpdateClick(item.id)}>Actualizar</button>
+                <button onClick={() => handleUpdateClick(item.id)}><FontAwesomeIcon icon={faPenToSquare} /></button>
               )}
             </td>
             {/* Agrega aquí otras columnas si es necesario */}

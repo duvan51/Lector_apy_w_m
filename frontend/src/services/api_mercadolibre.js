@@ -27,3 +27,14 @@ export const updateProductM = async (productId, productData) => {
         throw err;
     }
 };
+
+
+export const deleteProductM = async (productId) => {
+    try {
+        const req = await axios.delete(`${URL}/mercadolibre/products/${productId}`);
+        return req.data;
+    } catch (err) {
+        console.error("Error al eliminar el producto: ", err);
+        throw err;
+    }
+};
