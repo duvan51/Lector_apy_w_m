@@ -2,3 +2,19 @@ clave_cliente = ck_32352779c93f2030b095f6a22f82666d717762ad
 clave_secreta_cliente = cs_0674d31cdc67f146492fd836ab5f8c30cbe42fb6
 
 web = electricosaval.com
+
+
+---recuerda instalar antes la imagen mysql para que funcione
+
+docker--- 
+docker run --name projectmysql -p 3307:3307 -e MYSQL_ROOT_PASSWORD=project123 mysql
+
+name = projectmysql
+password = project123
+------mysql 
+
+y ahora ejecutamos el contenedor 
+- docker exec -it projectmysql bash  
+
+y ahora ejecutamos el mysql en el bash
+- mysql -u root -p
