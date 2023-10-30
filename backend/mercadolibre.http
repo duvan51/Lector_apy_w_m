@@ -1,6 +1,21 @@
 @apiProducts = http://localhost:8080/mercadolibre/products
+@users = http://localhost:8080/users
 
 
+###
+GET {{users}}
+
+###
+
+POST {{users}}
+Content-Type: application/json
+
+{
+    "nombre": "IVM",
+    "email": "IVM@gmail.com",
+     "tiendaWocomerce_id": "NULL",
+    "": "NULL"
+}
 
 ###
 POST https://api.mercadolibre.com/oauth/token
@@ -22,7 +37,8 @@ Content-Type: application/json
 
 {
     "price": 146000,
-    "available_quantity": 6
+    "available_quantity": 6,
+   
 }
 
 

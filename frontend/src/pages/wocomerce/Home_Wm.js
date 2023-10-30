@@ -31,6 +31,7 @@ useEffect(()=>{
   .then((res)=>{
     setProducts(res);
     setData(res);
+    console.log(res)
   })
   .catch((error)=>{
     console.error('Error al obtener datos de productos:', error);

@@ -3,5 +3,5 @@ export const config={
     port:3307,
     user: 'root',
     password: 'project123',
-    database: ''
+    database: 'conection'
 }

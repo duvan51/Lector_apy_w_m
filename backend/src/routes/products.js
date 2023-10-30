@@ -4,7 +4,8 @@ import {
     getUsers,
     getProductsW,
     getAllProducts,
-    Hello
+    ping,
+    createUser
 
 
 
@@ -14,11 +15,12 @@ const router = Router()
 
 
 //rutas de administracion
-router.get("/", Hello)
+router.get("/ping", ping)
 
 
 //rutas de administracion
 router.get("/users", getUsers)
+router.post("/users", createUser)
 
 
 //rutas wocommerce

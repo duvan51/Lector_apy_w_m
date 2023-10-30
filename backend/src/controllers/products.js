@@ -12,8 +12,11 @@ const WooCommerce = new WooCommerceRestApi({
 });
 
 
-export const Hello = async (req, res) =>{
-    res.json("hello world")
+export const ping = async (req, res) =>{
+  const connection = await connect();
+    const [result] = await connection.query("SELECT NOW()");
+
+    res.json(result[0])
 
 }   
 
@@ -21,13 +24,36 @@ export const Hello = async (req, res) =>{
 export const getUsers = async (req, res) =>{    
     try{
         const connection = await connect();
-        const [rows] = await connection.query('SELECT * FROM users')
+        const [rows] = await connection.query('SELECT * FROM user')
         res.json(rows)
     }catch (error){
         console.log("error al obtener usuarios", error)
         res.status(500).json({error: "error al obtener usuarios"})
     }
 }   
+
+export const createUser = async(req, res) => {
+  const connection = await connect();
+  const [results] = await connection.query('INSERT INTO user(nombre,email, tiendaWocomerce_id, tiendaMercadolibre_id ) VALUES (?,?,?,?)', [
+   
+      req.body.nombre,
+      req.body.email,
+      req.body.tiendaWocomerce_id,
+      req.body.tiendaMercadolibre_id
+  ]);
+  
+  res.json({
+      id: results.insertId,
+      ...req.body,
+  });
+}
+
+
+
+
+
+
+// ----- aqui comenzamos en wocomerce -------- /// 
 
 export const getProductsW = async (req, res) =>{
     try {
@@ -39,6 +65,7 @@ export const getProductsW = async (req, res) =>{
         res.status(500).json({ error: 'Error al obtener detalles del producto' });
     }
 }
+
 
 
 export const getAllProducts = async (req, res) => {

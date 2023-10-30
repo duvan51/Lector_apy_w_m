@@ -18,3 +18,10 @@ y ahora ejecutamos el contenedor
 
 y ahora ejecutamos el mysql en el bash
 - mysql -u root -p
+
+
+////DESDE CODIGO 
+
+CON EL YML --
+
+-docker compose up     //descarga lo que este espicifado con los parametros 
