@@ -30,6 +30,11 @@ export const getUsers = async (req, res) =>{
         console.log("error al obtener usuarios", error)
         res.status(500).json({error: "error al obtener usuarios"})
     }
+} 
+export const getUser = async (req, res) =>{    
+  const connection = await connect();
+  const [rows] = await connection.query('SELECT * FROM user WHERE id= ?',[req.params.id, ]);
+  res.json(rows[0]); 
 }   
 
 export const createUser = async(req, res) => {

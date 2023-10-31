@@ -5,7 +5,8 @@ import {
     getProductsW,
     getAllProducts,
     ping,
-    createUser
+    createUser,
+    getUser
 
 
 
@@ -20,6 +21,7 @@ router.get("/ping", ping)
 
 //rutas de administracion
 router.get("/users", getUsers)
+router.get("/users/:id", getUser)
 router.post("/users", createUser)
 
 
